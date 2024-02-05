@@ -1,10 +1,12 @@
 import urllib
 import oauth
+# hidden.oauth()
 import hidden
 
 
 def augment(url, parameters):
-    secrets = hidden.oauth()  # la méthode oauth() retourne un dictionnaire
+    # On donne à secrets les valeurs écrites dans hidden.py pour s'authentifier
+    secrets = hidden.oauth()
     consumer = oauth.OAuthCOnsumer(secrets['consumer_key'], secrets['consumer_secret'])
     token = oauth.OAuthToken(secrets['token_key'], secrets['token_secret'])
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(consumer,
