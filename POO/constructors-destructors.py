@@ -19,7 +19,7 @@ objet = PartyAnimal()
 print(type(objet))
 objet.party()
 objet.party()
-# Ici on affecte 42 à an, il n'est donc plus un objet et le deconstructor est appelé automatiquement !
+# Ici on affecte 42 à objet, il n'est donc plus un objet et le deconstructor est appelé automatiquement !
 objet = 42
 print(type(objet))
 print("objet contient la valeur : ", objet)
