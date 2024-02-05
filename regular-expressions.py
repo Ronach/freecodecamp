@@ -1,9 +1,11 @@
-# for regular expressions
+# re = regular expressions
 import re
 
 # with open("pyproject.toml", "rb") as f:
 fhand = open('romeo.txt')
 for line in fhand:
-    line = line.rstrip()  # right strip et lstrip() retire à gauche. strip() retire au début et à la fin de la string
+    # rstrip() right strip et lstrip() left strip. strip() agit à gauche et à droite.
+    line = line.rstrip()
     if re.search('^oh', line):
         print(line)
+g
