@@ -1,6 +1,9 @@
 import urllib
-import oauth
-# hidden.oauth()
+# https://pypi.org/project/oauth/ import oauth = vieux paquet pour OAuth 1.0a
+# Pour OAuth 2.0
+# import authlib : pip install Authlib -> bangerg
+# import requests : pip install requests
+# import requests-oauthlib : pip install requests-oauthlib
 import hidden
 
 
